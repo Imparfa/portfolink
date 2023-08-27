@@ -1,0 +1,39 @@
+.scroll-downs {
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  z-index: -2;
+  animation: slideUpArrow paused calc(var(--scroll) * -1s) both;
+}
+
+@keyframes slideUpArrow {
+  to {
+    transform: translate(0, calc(var(--scroll) * -20vh));
+  }
+}
+
+.mousey {
+  margin: auto;
+  width: 0.3vh;
+  padding: 1vh 1.5vh;
+  height: 3.5vh;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 0.3vh;
+  height: 1vh;
+  border-radius: 25px;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(1.5vh); opacity: 0;}
+}
