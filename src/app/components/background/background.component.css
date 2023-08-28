@@ -2,51 +2,30 @@
   display: flex;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #272c35;
-  z-index: 0;
+  z-index: -1;
 }
 
 .background-left {
   width: 50%;
   height: 200vh;
   background-color: #20242a;
-  z-index: 1;
-  animation: rotateLeftPart paused calc(var(--scroll) * -1s) both;
+  z-index: 2;
   transform-origin: 100% 50%;
-}
-
-@keyframes rotateLeftPart {
-  to {
-    transform: rotateZ(calc(var(--scroll) * 90deg)) scaleX(3) translateY(calc(var(--scroll) * 30vh));
-  }
 }
 
 .menu-opened .background-left {
   width: 65%;
-  animation: rotateLeftPartInMenu paused calc(var(--scroll) * -1s) both;
-}
-
-@keyframes rotateLeftPartInMenu {
-  to {
-    transform: rotateZ(calc(var(--scroll) * 90deg)) scaleX(3) translateY(calc(var(--scroll) * 70vh));
-  }
 }
 
 .background-right {
   z-index: -1;
   width: 50%;
-  animation: rotateRightPart paused calc(var(--scroll) * -1s) both;
 }
 
 .menu-opened .background-right {
   width: 35%;
-}
-
-@keyframes rotateRightPart {
-  to {
-    transform: translate(calc(var(--scroll) * 60vw), calc(var(--scroll) * 30vh));
-  }
 }
 
 .background-right p {

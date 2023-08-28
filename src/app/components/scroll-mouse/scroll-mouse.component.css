@@ -2,14 +2,7 @@
   position: absolute;
   top: 85%;
   width: 100%;
-  z-index: -2;
-  animation: slideUpArrow paused calc(var(--scroll) * -1s) both;
-}
-
-@keyframes slideUpArrow {
-  to {
-    transform: translate(0, calc(var(--scroll) * -20vh));
-  }
+  z-index: -1;
 }
 
 .mousey {
@@ -26,14 +19,8 @@
   width: 0.3vh;
   height: 1vh;
   border-radius: 25px;
-  background-color: #fff;
-  animation-name: scroll;
+  background-color: #fd6433;
   animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-timing-function: cubic-bezier(.15, .41, .69, .94);
   animation-iteration-count: infinite;
-}
-@keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(1.5vh); opacity: 0;}
 }

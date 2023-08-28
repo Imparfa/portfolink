@@ -1,0 +1,29 @@
+.background-left {
+  animation: rotateLeftPart paused calc(var(--scroll) * -1s) both;
+}
+
+.menu-opened .background-left {
+  animation: rotateLeftPartInMenu paused calc(var(--scroll) * -1s) both;
+}
+
+.background-right {
+  animation: rotateRightPart paused calc(var(--scroll) * -1s) both;
+}
+
+@keyframes rotateLeftPart {
+  to {
+    transform: rotateZ(calc(var(--scroll) * 90deg)) scaleX(3) translateX(calc(var(--scroll) * -34vh));
+  }
+}
+
+@keyframes rotateLeftPartInMenu {
+  to {
+    transform: rotateZ(calc(var(--scroll) * 90deg)) scaleX(3) translate(calc(var(--scroll) * -34vh), calc(var(--scroll) * 20vw));
+  }
+}
+
+@keyframes rotateRightPart {
+  to {
+    transform: translateX(calc(var(--scroll) * 60vw));
+  }
+}

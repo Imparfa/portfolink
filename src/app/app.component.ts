@@ -9,7 +9,20 @@ export class AppComponent {
   title = 'Portfolink';
 
   @HostListener('window:scroll', ['$event'])
-  onScroll(event: Event) {
-    document.body.style.setProperty('--scroll', window.scrollY / (document.body.offsetHeight - window.innerHeight) + '');
+  onScroll() {
+    const app = document.getElementById('app');
+    // @ts-ignore
+    document.body.style.setProperty('--scroll', app.scrollTop / window.innerHeight + '');
+    // @ts-ignore
+    app.addEventListener('wheel', (event) => {
+      event.preventDefault();
+      const delta = event.deltaY;
+
+      // @ts-ignore
+      app.scrollBy({
+        top: 0.1 * delta,
+        behavior: 'smooth'
+      });
+    });
   }
 }

@@ -1,11 +1,15 @@
 <app-background></app-background>
-<div (scroll)="onScroll($event)">
-  <app-header style="z-index: 9;"></app-header>
+<div id="app" class="app" (scroll)="onScroll()">
+  <app-header></app-header>
   <section id="home" class="home">
     <app-home></app-home>
   </section>
 
   <section id="skills" class="skills">
     <app-skills></app-skills>
+  </section>
+
+  <section id="course" class="course">
+    <app-course></app-course>
   </section>
 </div>

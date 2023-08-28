@@ -1,0 +1,92 @@
+.skills-list h2 {
+  animation: slideLeft paused calc(var(--scroll) * -1s) both;
+}
+
+.angular {
+  animation: slideUpOne paused calc(var(--scroll) * -1s) both;
+}
+
+.ionic {
+  animation: slideUpTwo paused calc(var(--scroll) * -1s) both;
+}
+
+.react {
+  animation: slideUpTree paused calc(var(--scroll) * -1s) both;
+}
+
+.spring {
+  animation: slideUpFour paused calc(var(--scroll) * -1s) both;
+}
+
+@keyframes slideLeft {
+  to {
+    transform: translateX(calc(-30vw + var(--scroll) * 30vw));
+  }
+}
+
+@keyframes slideUpOne {
+  to {
+    transform: translateY(calc(200vh + var(--scroll) * -200vh));
+  }
+}
+
+@keyframes slideUpTwo {
+  to {
+    transform: translateY(calc(150vh + var(--scroll) * -150vh));
+  }
+}
+
+@keyframes slideUpTree {
+  to {
+    transform: translateY(calc(100vh + var(--scroll) * -100vh));
+  }
+}
+
+@keyframes slideUpFour {
+  to {
+    transform: translateY(calc(50vh + var(--scroll) * -50vh));
+  }
+}
+
+@keyframes slideLeftOne {
+  to {
+    transform: translateX(calc(50vw + var(--scroll) * -50vw));
+  }
+}
+
+@keyframes slideLeftTwo {
+  to {
+    transform: translateX(calc(100vw + var(--scroll) * -100vw));
+  }
+}
+
+@keyframes slideLeftTree {
+  to {
+    transform: translateX(calc(150vw + var(--scroll) * -150vw));
+  }
+}
+
+@keyframes slideLeftFour {
+  to {
+    transform: translateX(calc(200vw + var(--scroll) * -200vw));
+  }
+}
+
+
+@media screen and (width <= 1000px) {
+  .angular {
+    animation: slideLeftOne paused calc(var(--scroll) * -1s) both;
+  }
+
+  .ionic {
+    animation: slideLeftTwo paused calc(var(--scroll) * -1s) both;
+  }
+
+  .react {
+    animation: slideLeftTree paused calc(var(--scroll) * -1s) both;
+  }
+
+  .spring {
+    animation: slideLeftFour paused calc(var(--scroll) * -1s) both;
+  }
+}

@@ -1,0 +1,27 @@
+.scroll-downs {
+  animation: slideUpArrow paused calc(var(--scroll) * -1s) both;
+}
+
+.scroller {
+  animation-name: scroll;
+}
+
+@keyframes slideUpArrow {
+  to {
+    transform: translateY(calc(var(--scroll) * -130vh));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(1.5vh);
+    opacity: 0;
+  }
+}

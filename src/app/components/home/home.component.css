@@ -1,3 +1,9 @@
+.home {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
 .site-title {
   position: absolute;
   top: 20%;
@@ -5,14 +11,7 @@
   font-weight: 700;
   font-size: calc(0.5em + 1vw);
   color: #eeeaee;
-  z-index: -1;
-  animation: slideUpTitle paused calc(var(--scroll) * -1s) both;
-}
-
-@keyframes slideUpTitle {
-  to {
-    transform: rotateZ(calc(var(--scroll) * 90deg)) translateY(calc(var(--scroll) * 5vh));
-  }
+  z-index: 0;
 }
 
 .site-title h1 {
@@ -36,15 +35,8 @@
   position: absolute;
   top: 40%;
   left: 50%;
-  width: 30%;
+  width: calc(20vw + 20vh);
   transform: translate(-50%, -20%);
-  animation: slideUp paused calc(var(--scroll) * -1s) both;
-}
-
-@keyframes slideUp {
-  to {
-    transform: translate(-50%, calc(-20% + var(--scroll) * 10vh));
-  }
 }
 
 .site-illustration img {
@@ -52,7 +44,11 @@
 }
 
 @media (width <= 1000px) {
+  .site-title {
+    z-index: -1;
+  }
+
   .site-illustration {
-    z-index: 0;
+    z-index: -1;
   }
 }

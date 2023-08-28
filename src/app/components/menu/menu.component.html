@@ -1,17 +1,20 @@
-<button (click)="openNav()">
-  <img src="assets/hamburger_icon.svg" alt="open-menu"/>
-</button>
-<nav id="menu">
-  <div class="close">
-    <button (click)="closeNav()">
-      <img src="assets/cross_icon.svg" alt="close-menu"/>
-    </button>
-  </div>
-  <ul>
-    <li><a href="#home">Accueil</a></li>
-    <li><a href="#about">A propos</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#">Témoignages</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
+<div class="menu">
+  <button (click)="openNav()">
+    <img src="assets/menu-icon.svg" alt="open-menu"/>
+  </button>
+  <nav id="menu">
+    <div class="close">
+      <button (click)="closeNav(true)">
+        <img src="assets/close-icon.svg" alt="close-menu"/>
+      </button>
+    </div>
+    <ul>
+      <li><a href="#home" (click)="closeNav(false)">Home</a></li>
+      <li><a href="#skills" (click)="closeNav(false)">Skills</a></li>
+      <li><a href="#course" (click)="closeNav(false)">Course</a></li>
+      <li><a href="#" (click)="closeNav(false)">Témoignages</a></li>
+      <li><a href="#" (click)="closeNav(false)">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
