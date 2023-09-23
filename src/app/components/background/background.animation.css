@@ -6,7 +6,7 @@
   animation: rotateLeftPartInMenu paused calc(var(--scroll) * -1s) both;
 }
 
-.background-right {
+.background-right p {
   animation: rotateRightPart paused calc(var(--scroll) * -1s) both;
 }
 

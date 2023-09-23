@@ -5,6 +5,7 @@
   height: 100vh;
   background-color: #272c35;
   z-index: -1;
+  overflow: hidden;
 }
 
 .background-left {

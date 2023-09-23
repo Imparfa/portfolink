@@ -3,13 +3,29 @@
   width: 100vw;
   overflow-y: scroll;
   overflow-x: hidden;
-  scrollbar-width: auto;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.app::-webkit-scrollbar {
+  display: none;
 }
 
 .app section {
   height: 100vh;
   width: 100vw;
   scroll-snap-align: start;
+}
+
+@media (width <= 1000px) {
+  .app {
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+  }
+
+  .app section {
+    scroll-snap-align: center;
+  }
 }

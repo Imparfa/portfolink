@@ -1,15 +1,15 @@
-<app-background></app-background>
+<app-background [scrolled]="scrolled"></app-background>
 <div id="app" class="app" (scroll)="onScroll()">
   <app-header></app-header>
   <section id="home" class="home">
-    <app-home></app-home>
+    <app-home [scrolled]="scrolled"></app-home>
   </section>
 
   <section id="skills" class="skills">
     <app-skills></app-skills>
   </section>
 
-  <section id="course" class="course">
-    <app-course></app-course>
+  <section id="career" class="career">
+    <app-career></app-career>
   </section>
 </div>

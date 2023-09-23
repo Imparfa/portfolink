@@ -1,0 +1,153 @@
+.career {
+  height: 100vh;
+  width: 90vw;
+  padding-inline: 5vw;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template: 1fr auto auto 1fr / 100%;
+}
+
+.career h2 {
+  grid-row: 2;
+  font-size: calc(1.5vh + 1.5vw);
+  font-weight: bold;
+  color: #eeeaee;
+  text-align: center;
+  padding-block: 1vh;
+  z-index: -1;
+}
+
+.travel {
+  grid-column: 1;
+  grid-row: 3;
+  display: grid;
+  grid-template: auto auto auto auto auto / 1fr auto 1fr;
+  grid-row-gap: 0.5vh;
+  width: 90vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  grid-area: 1 / 2 / 7 / 2;
+  position: relative;
+  border: none;
+  border-left: 1px solid hsla(15, 98%, 60%, 100%);
+  height: 100%;
+  width: 1px;
+  z-index: -1;
+  margin-block: 0;
+  transform-origin: top;
+
+}
+
+.step {
+  width: calc(100% - 4vw);
+  height: calc(100% - 1vh);
+  padding: 0.5vh 2vw;
+  justify-self: center;
+  color: #eeeaee;
+  grid-column: 3;
+  z-index: -1;
+}
+
+.formation {
+  text-align: right;
+  grid-column: 1;
+}
+
+.step span {
+  font-size: calc(0.6vh + 0.6vw);
+  color: #fd6433;
+}
+
+.step h4 {
+  font-size: calc(0.7vh + 0.7vw);
+  margin-block: 0.3vh;
+}
+
+.step p {
+  font-family: 'Comfortaa', cursive;
+  font-size: calc(0.5vh + 0.5vw);
+  margin-block: 0.3vh;
+}
+
+.marker {
+  justify-self: center;
+  fill: #fd6433;
+  grid-column: 2;
+  align-self: start;
+  padding-top: 1vh;
+  z-index: -1;
+}
+
+.ynov {
+  grid-row: 1;
+}
+
+.echoes {
+  grid-row: 2;
+}
+
+.esgi {
+  grid-row: 3;
+}
+
+.sdi {
+  grid-row: 4;
+}
+
+.epitech {
+  grid-row: 5;
+}
+
+.circle {
+  grid-row: 6;
+}
+
+@media (width <= 1000px) {
+  .career h2 {
+    font-size: calc(2vh + 2vw);
+  }
+
+  .travel {
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr auto;
+    grid-row-gap: 1vh;
+    grid-column-gap: 1vw;
+    width: 70vw;
+    justify-self: center;
+  }
+
+  .timeline {
+    grid-area: 1 / 2 / 7 / 2;
+    align-self: start;
+    justify-self: left;
+    width: calc(100% - 1.6vh);
+  }
+
+  .step {
+    grid-column: 1;
+    justify-self: right;
+    height: calc(100% - 2vh);
+    padding: 1vh 2vw;
+    text-align: right;
+  }
+
+  .step span {
+    font-size: calc(0.9vh + 0.9vw);
+  }
+
+  .step h4 {
+    font-size: calc(1vh + 1vw);
+  }
+
+  .step p {
+    font-size: calc(0.8vh + 0.8vw);
+  }
+
+  .marker {
+    justify-self: start;
+    padding-top: 1vh;
+  }
+}

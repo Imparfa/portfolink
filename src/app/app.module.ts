@@ -9,7 +9,7 @@ import {HeaderComponent} from './components/header/header.component';
 import {ScrollMouseComponent} from './components/scroll-mouse/scroll-mouse.component';
 import {MenuComponent} from './components/menu/menu.component';
 import {SkillsComponent} from './components/skills/skills.component';
-import {CourseComponent} from './components/course/course.component';
+import {CareerComponent} from './components/career/career.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import {CourseComponent} from './components/course/course.component';
     ScrollMouseComponent,
     MenuComponent,
     SkillsComponent,
-    CourseComponent,
+    CareerComponent,
   ],
     imports: [
         BrowserModule,
