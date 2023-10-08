@@ -24,6 +24,7 @@
   font-size: calc(1.5vh + 1.5vw);
   font-weight: bold;
   color: #eeeaee;
+  margin: 0;
   z-index: -1;
 }
 
@@ -35,10 +36,10 @@
   color: #eeeaee;
   background-color: #20242a;
   border-radius: 15px;
-  height: 15vw;
+  height: 100%;
   z-index: -1;
   padding: 1.5vh 1.5vw;
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 15px 5px rgba(32, 36, 42, 0.5);
 }
 
 .skill-header {
@@ -52,7 +53,7 @@
 }
 
 .skill-header h3 {
-  font-size: calc(1vh + 1vw);
+  font-size: calc(1.5vh + 1.5vw);
   font-weight: bold;
   color: #eeeaee;
   width: calc(100% - 1vw);
@@ -71,6 +72,7 @@
 .skill-content p {
   font-family: 'Comfortaa', cursive;
   text-justify: none;
+  font-size: calc(0.8vw + 0.8vh);
 }
 
 .skill span {
@@ -92,7 +94,7 @@
     grid-area: 1 / 1 / 1 / 1;
     grid-row: 2;
     margin: 0;
-    font-size: calc(2vh + 2vw);
+    font-size: calc(3vh + 3vw);
   }
 
   .skill {
@@ -110,6 +112,7 @@
   .skill-header h3 {
     width: auto;
     padding-inline: 1vw;
+    font-size: calc(1vh + 1.3vw);
   }
 
   .skill-content {
@@ -117,6 +120,6 @@
   }
 
   .skill-content p {
-    font-size: calc(0.8vh + 0.8vw);
+    font-size: calc(0.7vh + 1.3vw);
   }
 }

@@ -6,5 +6,4 @@ import {Component} from '@angular/core';
   styleUrls: ['./skills.component.css', './skills.animation.css']
 })
 export class SkillsComponent {
-
 }

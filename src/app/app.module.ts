@@ -10,6 +10,7 @@ import {ScrollMouseComponent} from './components/scroll-mouse/scroll-mouse.compo
 import {MenuComponent} from './components/menu/menu.component';
 import {SkillsComponent} from './components/skills/skills.component';
 import {CareerComponent} from './components/career/career.component';
+import {WorksComponent} from './components/works/works.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import {CareerComponent} from './components/career/career.component';
     MenuComponent,
     SkillsComponent,
     CareerComponent,
+    WorksComponent,
   ],
     imports: [
         BrowserModule,

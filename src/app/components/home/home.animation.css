@@ -1,18 +1,18 @@
 .site-title {
-  animation: slideUpTitle paused calc(var(--scroll) * -1s) both;
+  animation: slideTitle paused calc(var(--scroll) * -1s) both;
 }
 
 .site-illustration {
-  animation: slideUp paused calc(var(--scroll) * -1s) both;
+  animation: slideIllustration paused calc(var(--scroll) * -1s) both;
 }
 
-@keyframes slideUpTitle {
+@keyframes slideTitle {
   to {
     transform: rotateZ(calc(var(--scroll) * 90deg)) translate(calc(var(--scroll) * -90vh), calc(var(--scroll) * -40vw));
   }
 }
 
-@keyframes slideUp {
+@keyframes slideIllustration {
   to {
     transform: translate(-50%, calc(-20% + var(--scroll) * -90vh));
   }

@@ -1,8 +1,8 @@
 <div id="background" class="background">
-  <div [hidden]="scrolled" class="background-left">
+  <div [hidden]="scroll >= 1" class="background-left">
   </div>
   <div class="background-right">
-    <p [hidden]="scrolled">
+    <p [hidden]="scroll >= 1">
       Web<br/>
       Developer
     </p>

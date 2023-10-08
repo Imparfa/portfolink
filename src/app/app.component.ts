@@ -7,19 +7,15 @@ import {Component, HostListener} from '@angular/core';
 })
 export class AppComponent {
   title = 'Portfolink';
-  scrolled = false;
+  scroll = 0
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {
     const app = document.getElementById('app');
-    const home = document.getElementById('home');
 
     if (app) {
-      const scroll = app.scrollTop / app.clientHeight;
-      document.body.style.setProperty('--scroll', scroll + '');
-      if (home)
-        this.scrolled = (scroll >= 1);
-
+      this.scroll = app.scrollTop / app.clientHeight;
+      document.body.style.setProperty('--scroll', this.scroll + '');
       app.addEventListener('wheel', (event) => {
         event.preventDefault();
         const delta = event.deltaY;

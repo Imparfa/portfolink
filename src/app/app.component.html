@@ -1,8 +1,8 @@
-<app-background [scrolled]="scrolled"></app-background>
+<app-background [scroll]="scroll"></app-background>
 <div id="app" class="app" (scroll)="onScroll()">
   <app-header></app-header>
   <section id="home" class="home">
-    <app-home [scrolled]="scrolled"></app-home>
+    <app-home [scroll]="scroll"></app-home>
   </section>
 
   <section id="skills" class="skills">
@@ -11,5 +11,9 @@
 
   <section id="career" class="career">
     <app-career></app-career>
+  </section>
+
+  <section id="works" class="works">
+    <app-works></app-works>
   </section>
 </div>

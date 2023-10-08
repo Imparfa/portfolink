@@ -1,12 +1,12 @@
 .scroll-downs {
-  animation: slideUpArrow paused calc(var(--scroll) * -1s) both;
+  animation: slideMouse paused calc(var(--scroll) * -1s) both;
 }
 
 .scroller {
   animation-name: scroll;
 }
 
-@keyframes slideUpArrow {
+@keyframes slideMouse {
   to {
     transform: translateY(calc(var(--scroll) * -130vh));
   }

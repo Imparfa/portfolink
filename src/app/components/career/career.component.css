@@ -9,6 +9,7 @@
 }
 
 .career h2 {
+  margin: 0;
   grid-row: 2;
   font-size: calc(1.5vh + 1.5vw);
   font-weight: bold;
@@ -39,7 +40,6 @@
   z-index: -1;
   margin-block: 0;
   transform-origin: top;
-
 }
 
 .step {
@@ -58,18 +58,18 @@
 }
 
 .step span {
-  font-size: calc(0.6vh + 0.6vw);
+  font-size: calc(0.7vh + 0.7vw);
   color: #fd6433;
 }
 
 .step h4 {
-  font-size: calc(0.7vh + 0.7vw);
+  font-size: calc(0.8vh + 0.8vw);
   margin-block: 0.3vh;
 }
 
 .step p {
   font-family: 'Comfortaa', cursive;
-  font-size: calc(0.5vh + 0.5vw);
+  font-size: calc(0.6vh + 0.6vw);
   margin-block: 0.3vh;
 }
 
@@ -108,12 +108,12 @@
 
 @media (width <= 1000px) {
   .career h2 {
-    font-size: calc(2vh + 2vw);
+    font-size: calc(3vh + 3vw);
   }
 
   .travel {
     grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr auto;
-    grid-row-gap: 1vh;
+    grid-row-gap: 0;
     grid-column-gap: 1vw;
     width: 70vw;
     justify-self: center;
@@ -135,15 +135,17 @@
   }
 
   .step span {
-    font-size: calc(0.9vh + 0.9vw);
+    font-size: calc(0.7vh + 1.3vw);
   }
 
   .step h4 {
-    font-size: calc(1vh + 1vw);
+    font-size: calc(0.8vh + 1.3vw);
+    margin-block: 0;
   }
 
   .step p {
-    font-size: calc(0.8vh + 0.8vw);
+    font-size: calc(0.6vh + 1.3vw);
+    margin-block: 0;
   }
 
   .marker {

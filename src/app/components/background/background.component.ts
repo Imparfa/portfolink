@@ -7,5 +7,5 @@ import {Component, Input} from '@angular/core';
 })
 export class BackgroundComponent {
   @Input()
-  scrolled = false;
+  scroll = 0;
 }

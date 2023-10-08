@@ -21,7 +21,7 @@
 
 @media (width <= 1000px) {
   .app {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
   }
 

@@ -10,4 +10,6 @@ html, header, body {
 }
 body {
   background-color: #272c35;
+
+  --scroll: 0;
 }

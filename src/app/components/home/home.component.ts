@@ -7,5 +7,5 @@ import {Component, Input} from '@angular/core';
 })
 export class HomeComponent {
   @Input()
-  scrolled = false;
+  scroll = 0;
 }
