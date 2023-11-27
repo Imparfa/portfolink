@@ -34,8 +34,9 @@
   position: absolute;
   top: 40%;
   left: 50%;
-  width: calc(20vw + 20vh);
+  width: calc(18vw + 18vh);
   transform: translate(-50%, -20%);
+  pointer-events: none;
 }
 
 .site-illustration img {

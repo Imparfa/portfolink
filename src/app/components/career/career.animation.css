@@ -1,168 +1,168 @@
-.career h2 {
-  animation: slideTitle paused calc(var(--scroll) * -1s) both;
-}
+/*.career h2 {*/
+/*  animation: slideTitle paused calc(var(--scroll) * -1s) both;*/
+/*}*/
 
-.timeline {
-  animation: drawLine paused calc(var(--scroll) * -1s) both;
-}
+/*.timeline {*/
+/*  animation: drawLine paused calc(var(--scroll) * -1s) both;*/
+/*}*/
 
-.marker {
-  animation: fadeMarker paused calc(var(--scroll) * -1s) both;
-}
+/*.marker {*/
+/*  animation: fadeMarker paused calc(var(--scroll) * -1s) both;*/
+/*}*/
 
-.ynov {
-  animation: slideYnov paused calc(var(--scroll) * -1s) both;
-}
+/*.ynov {*/
+/*  animation: slideYnov paused calc(var(--scroll) * -1s) both;*/
+/*}*/
 
-.echoes {
-  animation: slideEchoes paused calc(var(--scroll) * -1s) both;
-}
+/*.echoes {*/
+/*  animation: slideEchoes paused calc(var(--scroll) * -1s) both;*/
+/*}*/
 
-.esgi {
-  animation: slideEsgi paused calc(var(--scroll) * -1s) both;
-}
+/*.esgi {*/
+/*  animation: slideEsgi paused calc(var(--scroll) * -1s) both;*/
+/*}*/
 
-.sdi {
-  animation: slideSdi paused calc(var(--scroll) * -1s) both;
-}
+/*.sdi {*/
+/*  animation: slideSdi paused calc(var(--scroll) * -1s) both;*/
+/*}*/
 
-.epitech {
-  animation: slideEpitech paused calc(var(--scroll) * -1s) both;
-}
+/*.epitech {*/
+/*  animation: slideEpitech paused calc(var(--scroll) * -1s) both;*/
+/*}*/
 
-.circle {
-  animation: slideCircle paused calc(var(--scroll) * -1s) both;
-}
+/*.circle {*/
+/*  animation: slideCircle paused calc(var(--scroll) * -1s) both;*/
+/*}*/
 
-@media (width <= 1000px) {
-  .timeline {
-    animation: drawLineMobile paused calc(var(--scroll) * -1s) both;
-  }
+/*@media (width <= 1000px) {*/
+/*  .timeline {*/
+/*    animation: drawLineMobile paused calc(var(--scroll) * -1s) both;*/
+/*  }*/
 
-  .ynov {
-    animation: slideYnovMobile paused calc(var(--scroll) * -1s) both;
-  }
+/*  .ynov {*/
+/*    animation: slideYnovMobile paused calc(var(--scroll) * -1s) both;*/
+/*  }*/
 
-  .echoes {
-    animation: slideEchoesMobile paused calc(var(--scroll) * -1s) both;
-  }
+/*  .echoes {*/
+/*    animation: slideEchoesMobile paused calc(var(--scroll) * -1s) both;*/
+/*  }*/
 
-  .esgi {
-    animation: slideEsgiMobile paused calc(var(--scroll) * -1s) both;
-  }
+/*  .esgi {*/
+/*    animation: slideEsgiMobile paused calc(var(--scroll) * -1s) both;*/
+/*  }*/
 
-  .sdi {
-    animation: slideSdiMobile paused calc(var(--scroll) * -1s) both;
-  }
+/*  .sdi {*/
+/*    animation: slideSdiMobile paused calc(var(--scroll) * -1s) both;*/
+/*  }*/
 
-  .epitech {
-    animation: slideEpitechMobile paused calc(var(--scroll) * -1s) both;
-  }
+/*  .epitech {*/
+/*    animation: slideEpitechMobile paused calc(var(--scroll) * -1s) both;*/
+/*  }*/
 
-  .circle {
-    animation: slideCircleMobile paused calc(var(--scroll) * -1s) both;
-  }
-}
+/*  .circle {*/
+/*    animation: slideCircleMobile paused calc(var(--scroll) * -1s) both;*/
+/*  }*/
+/*}*/
 
-@keyframes drawLine {
-  99% {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(calc(200vh + var(--scroll) / 2 * -200vh));
-  }
-}
+/*@keyframes drawLine {*/
+/*  99% {*/
+/*    transform: translateY(0);*/
+/*  }*/
+/*  to {*/
+/*    transform: translateY(calc(200vh + var(--scroll) / 2 * -200vh));*/
+/*  }*/
+/*}*/
 
-@keyframes drawLineMobile {
-  to {
-    transform: rotateZ(calc(-110deg + var(--scroll) / 2 * 110deg)) translateX(calc(50vw + var(--scroll) / 2 * -50vw));
-  }
-}
+/*@keyframes drawLineMobile {*/
+/*  to {*/
+/*    transform: rotateZ(calc(-110deg + var(--scroll) / 2 * 110deg)) translateX(calc(25vw + var(--scroll) / 2 * -25vw));*/
+/*  }*/
+/*}*/
 
-@keyframes fadeMarker {
-  99% {
-    opacity: 0;
-  }
-  to {
-    opacity: calc(var(--scroll) / 2 * 1);
-  }
-}
+/*@keyframes fadeMarker {*/
+/*  99% {*/
+/*    opacity: 0;*/
+/*  }*/
+/*  to {*/
+/*    opacity: calc(var(--scroll) / 2 * 1);*/
+/*  }*/
+/*}*/
 
-@keyframes slideTitle {
-  to {
-    transform: translateX(calc(-200vw + var(--scroll) / 2 * 200vw));
-  }
-}
+/*@keyframes slideTitle {*/
+/*  to {*/
+/*    transform: translateX(calc(-100vw + var(--scroll) / 2 * 100vw));*/
+/*  }*/
+/*}*/
 
-@keyframes slideYnov {
-  to {
-    transform: translateX(calc(-50vw + var(--scroll) / 2 * 50vw));
-  }
-}
+/*@keyframes slideYnov {*/
+/*  to {*/
+/*    transform: translateX(calc(-25vw + var(--scroll) / 2 * 25vw));*/
+/*  }*/
+/*}*/
 
-@keyframes slideYnovMobile {
-  to {
-    transform: translateX(calc(50vw + var(--scroll) / 2 * -50vw));
-  }
-}
+/*@keyframes slideYnovMobile {*/
+/*  to {*/
+/*    transform: translateX(calc(25vw + var(--scroll) / 2 * -25vw));*/
+/*  }*/
+/*}*/
 
-@keyframes slideEchoes {
-  to {
-    transform: translateX(calc(100vw + var(--scroll) / 2 * -100vw));
-  }
-}
+/*@keyframes slideEchoes {*/
+/*  to {*/
+/*    transform: translateX(calc(50vw + var(--scroll) / 2 * -50vw));*/
+/*  }*/
+/*}*/
 
-@keyframes slideEchoesMobile {
-  to {
-    transform: translateX(calc(100vw + var(--scroll) / 2 * -100vw));
-  }
-}
+/*@keyframes slideEchoesMobile {*/
+/*  to {*/
+/*    transform: translateX(calc(50vw + var(--scroll) / 2 * -50vw));*/
+/*  }*/
+/*}*/
 
-@keyframes slideEsgi {
-  to {
-    transform: translateX(calc(-150vw + var(--scroll) / 2 * 150vw));
-  }
-}
+/*@keyframes slideEsgi {*/
+/*  to {*/
+/*    transform: translateX(calc(-75vw + var(--scroll) / 2 * 75vw));*/
+/*  }*/
+/*}*/
 
-@keyframes slideEsgiMobile {
-  to {
-    transform: translateX(calc(150vw + var(--scroll) / 2 * -150vw));
-  }
-}
+/*@keyframes slideEsgiMobile {*/
+/*  to {*/
+/*    transform: translateX(calc(75vw + var(--scroll) / 2 * -75vw));*/
+/*  }*/
+/*}*/
 
-@keyframes slideSdi {
-  to {
-    transform: translateX(calc(200vw + var(--scroll) / 2 * -200vw));
-  }
-}
+/*@keyframes slideSdi {*/
+/*  to {*/
+/*    transform: translateX(calc(100vw + var(--scroll) / 2 * -100vw));*/
+/*  }*/
+/*}*/
 
-@keyframes slideSdiMobile {
-  to {
-    transform: translateX(calc(200vw + var(--scroll) / 2 * -200vw));
-  }
-}
+/*@keyframes slideSdiMobile {*/
+/*  to {*/
+/*    transform: translateX(calc(100vw + var(--scroll) / 2 * -100vw));*/
+/*  }*/
+/*}*/
 
-@keyframes slideEpitech {
-  to {
-    transform: translateX(calc(-250vw + var(--scroll) / 2 * 250vw));
-  }
-}
+/*@keyframes slideEpitech {*/
+/*  to {*/
+/*    transform: translateX(calc(-125vw + var(--scroll) / 2 * 125vw));*/
+/*  }*/
+/*}*/
 
 
-@keyframes slideEpitechMobile {
-  to {
-    transform: translateX(calc(250vw + var(--scroll) / 2 * -250vw));
-  }
-}
+/*@keyframes slideEpitechMobile {*/
+/*  to {*/
+/*    transform: translateX(calc(125vw + var(--scroll) / 2 * -125vw));*/
+/*  }*/
+/*}*/
 
-@keyframes slideCircle {
-  to {
-    transform: translateX(calc(300vw + var(--scroll) / 2 * -300vw));
-  }
-}
+/*@keyframes slideCircle {*/
+/*  to {*/
+/*    transform: translateX(calc(150vw + var(--scroll) / 2 * -150vw));*/
+/*  }*/
+/*}*/
 
-@keyframes slideCircleMobile {
-  to {
-    transform: translateX(calc(300vw + var(--scroll) / 2 * -300vw));
-  }
-}
+/*@keyframes slideCircleMobile {*/
+/*  to {*/
+/*    transform: translateX(calc(150vw + var(--scroll) / 2 * -150vw));*/
+/*  }*/
+/*}*/

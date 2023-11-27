@@ -5,17 +5,27 @@ header {
   grid-template: 100% / auto 1fr auto;
   padding: 4%;
   color: #eeeaee;
+  z-index: 0;
+  pointer-events: none;
 }
 
-header h2 {
+header a {
+  text-decoration: none;
+  color: #eeeaee;
+  pointer-events: auto;
+}
+
+header a h2 {
   grid-area: 1 / 1;
   margin: 0;
-  color: #eeeaee;
   font-size: calc(1vh + 1vw);
+  z-index: 1;
+  pointer-events: auto;
 }
 
 header span {
   color: #fd6433;
+  z-index: 1;
 }
 
 app-menu {
@@ -24,5 +34,6 @@ app-menu {
   width: calc(3.2vh + 0.5vw);
   align-self: center;
   z-index: 5;
+  pointer-events: auto;
 }
 

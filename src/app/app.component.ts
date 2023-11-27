@@ -17,14 +17,21 @@ export class AppComponent {
       this.scroll = app.scrollTop / app.clientHeight;
       document.body.style.setProperty('--scroll', this.scroll + '');
       app.addEventListener('wheel', (event) => {
-        event.preventDefault();
-        const delta = event.deltaY;
+        if (this.scroll != 3) {
+          event.preventDefault();
+          const delta = event.deltaY;
 
-        app.scrollBy({
-          top: delta,
-          behavior: 'smooth'
-        });
+          app.scrollBy({
+            top: 0.001 * delta,
+            behavior: 'smooth'
+          });
+        }
       });
+
+      const works = document.getElementById('works');
+      if (works && this.scroll == 3) {
+        works.focus();
+      }
     }
   }
 }

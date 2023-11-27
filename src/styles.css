@@ -9,7 +9,6 @@ html, header, body {
   overflow: hidden;
 }
 body {
-  background-color: #272c35;
-
   --scroll: 0;
+  background-color: #272c35;
 }

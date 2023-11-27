@@ -1,12 +1,12 @@
 <div class="home">
-  <div *ngIf="scroll < 1" class="site-title">
+  <div *ngIf="scroll < 1.1" class="site-title">
     <h1>
       Lylouann<br/>
       Truttmann
     </h1>
     <h3><span>FULLSTACK</span> DEVELOPER</h3>
   </div>
-  <div class="site-illustration">
+  <div *ngIf="scroll < 1.1" class="site-illustration">
     <img src="assets/developer-person.png" alt="Illustration"/>
   </div>
   <app-scroll-mouse></app-scroll-mouse>

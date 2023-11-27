@@ -1,5 +1,5 @@
 .menu {
-  z-index: 3;
+  z-index: 9;
 }
 
 .menu button {
@@ -9,10 +9,17 @@
   padding: 0;
   border: none;
   background: none;
+  z-index: 9;
+}
+
+.menu .close {
+  width: fit-content;
+  margin-left: auto;
 }
 
 .menu button:hover {
   opacity: 0.5;
+  z-index: 9;
 }
 
 .menu button img {
@@ -28,7 +35,7 @@
   position: fixed;
   top: 0;
   right: -50%;
-  z-index: 99;
+  z-index: 9;
   background-color: #20242a;
   padding: 4%;
   transition: left 0.5s ease;
@@ -41,6 +48,7 @@
   color: #eeeaee;
   display: block;
   transition: 0.3s;
+  z-index: 9;
 }
 
 .menu nav a:hover {
@@ -51,6 +59,7 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  z-index: 9;
 }
 
 /* Active class */
@@ -84,10 +93,4 @@
     text-align: center;
     margin-block: 4%;
   }
-}
-
-/* Close btn */
-.menu .close {
-  width: fit-content;
-  margin-left: auto;
 }

@@ -1,8 +1,8 @@
 <div id="background" class="background">
-  <div [hidden]="scroll >= 1" class="background-left">
+  <div *ngIf="scroll < 1.1 || scroll > 3" class="background-left">
   </div>
   <div class="background-right">
-    <p [hidden]="scroll >= 1">
+    <p *ngIf="scroll < 1.1">
       Web<br/>
       Developer
     </p>

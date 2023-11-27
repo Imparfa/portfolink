@@ -1,19 +1,23 @@
 <app-background [scroll]="scroll"></app-background>
 <div id="app" class="app" (scroll)="onScroll()">
   <app-header></app-header>
-  <section id="home" class="home">
+  <section id="home">
     <app-home [scroll]="scroll"></app-home>
   </section>
 
-  <section id="skills" class="skills">
+  <section id="skills">
     <app-skills></app-skills>
   </section>
 
-  <section id="career" class="career">
+  <section id="career">
     <app-career></app-career>
   </section>
 
-  <section id="works" class="works">
+  <section id="works">
     <app-works></app-works>
   </section>
+  <section id="contact" style="background: rgba(0,0,0,0); height: 70vh">
+    <app-contact></app-contact>
+  </section>
+
 </div>
